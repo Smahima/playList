@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import '../styles/App.css';
 import NavBar from '../components/NavBar';
-import PlayList from '../components/PlayList';
 import PlayListForm from '../components/PlayListForm';
+import PlayList from '../components/PlayList';
+
 
 
 class App extends Component {
@@ -10,8 +11,9 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar/>
-        <PlayList/>
         <PlayListForm/>
+        <PlayList/>
+
         {this.props.children}
       </div>
     );
