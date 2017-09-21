@@ -1,17 +1,33 @@
 import React, { Component } from 'react';
 
 class PlayListItem extends Component {
-  render (){
-    let array = this.props.songs;
-    let songs = this.array.map ((song, index) => {
-      <div>{index}</div>
-    })
-    return (
-      <div>{songs}</div>
-    );
-  }
-}
 
+    render(){
+
+      let border = {
+      border: '1px solid black'
+    }
+
+      let songs = this.props.arr.map( (song, index) => {
+
+        return (
+          <div style={border} key={index}>
+            <div>User: {song.userName}</div> <br></br>
+            <div>Artist/Band: {song.songArtist}</div> <br></br>
+            <div>Title: {song.songTitle}</div> <br></br>
+            <div>Notes: {song.songNotes}</div> <br></br>
+
+          </div>
+        );
+      });
+      return (
+        <div>
+          {songs}
+        </div>
+      )
+
+  }
+  }
 
 
 export default PlayListItem;

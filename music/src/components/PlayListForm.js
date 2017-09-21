@@ -4,10 +4,10 @@ class PlayListForm extends Component {
   constructor (props){
     super(props);
 
-this.handleAddToList = this.handleAddToList.bind(this);
+this.addToList = this.addToList.bind(this);
 this.handleUserName = this.handleUserName.bind(this);
 this.handleSongNotes = this.handleSongNotes.bind(this);
-this.handleArtist = this.handleArtis.bind(this);
+this.handleArtist = this.handleArtist.bind(this);
 this.handleSongTitle = this.handleSongTitle.bind(this);
 
     this.state = {
@@ -17,16 +17,16 @@ this.handleSongTitle = this.handleSongTitle.bind(this);
       songTitle: "",
     };
   }
-      handleName(e) {
+      handleUserName(e) {
       this.setState({userName: e.target.value});
     }
-    handleTitle(e) {
+    handleSongTitle(e) {
       this.setState({songTitle: e.target.value});
     }
     handleArtist(e) {
       this.setState({songArtist: e.target.value});
     }
-    handleNotes(e) {
+    handleSongNotes(e) {
       this.setState({songNotes: e.target.value});
     }
     addToList = (e) => {
@@ -50,7 +50,49 @@ this.handleSongTitle = this.handleSongTitle.bind(this);
       });
       this.setState({userName: '', songNotes: '', songArtist: '', songTitle:''});
     }
+    render (){
+      return (
+      <div className="main">
+        <form onSubmit={this.addToList}>
 
+          <div className="form-group row">
+            <label  className="col-sm-2 col-form-label">User Name</label>
+              <div className="col-sm-10">
+              <input onChange={this.handleUserName} type="text" className="form-control" value={this.state.userName} placeholder="Enter User Name"/>
+            </div>
+          </div>
+
+          <div className="form-group row">
+            <label  className="col-sm-2 col-form-label">Artist</label>
+              <div className="col-sm-10">
+              <input onChange={this.handleArtist} type="text" className="form-control" value={this.state.Artist} placeholder="Search by Artist"/>
+            </div>
+          </div>
+
+          <div className="form-group row">
+            <label  className="col-sm-2 col-form-label">Song Title</label>
+              <div className="col-sm-10">
+              <input onChange={this.handleSongTitle} type="text" className="form-control" value={this.state.songTitle} placeholder="Search by Song Title"/>
+            </div>
+          </div>
+
+          <div className="form-group row">
+            <label  className="col-sm-2 col-form-label">Notes about the Song</label>
+              <div className="col-sm-10">
+              <textarea onChange={this.handleSongNotes} type="text" rows="4" className="form-control" value={this.state.songNotes} />
+            </div>
+
+            <div className="form-group">
+              <input className="btn btn-primary btn-lg" type="submit" value="Submit"/>
+            </div>
+
+          </div>
+
+        </form>
+
+    </div>
+      );
+    }
 }
 
 
