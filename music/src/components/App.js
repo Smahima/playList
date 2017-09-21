@@ -9,13 +9,18 @@ import PlayList from '../components/PlayList';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <NavBar/>
-        <PlayListForm/>
-        <PlayList/>
+      <div>
+        <div className="NavBar"><NavBar/></div>
+        <div className="App">
+          <PlayListForm/>
+          <PlayList/>
+        </div>
 
         {this.props.children}
+
       </div>
+
+
     );
   }
 }
