@@ -78,13 +78,13 @@ this.handleSongTitle = this.handleSongTitle.bind(this);
           </div>
 
           <div className="form-group row">
-            <label  className="col-sm-2 col-form-label">Notes about the Song</label>
+            <label  className="col-sm-6 col-form-label">Notes about the Song</label>
               <div className="col-sm-10">
               <textarea onChange={this.handleSongNotes} type="text" rows="4" className="form-control" value={this.state.songNotes} />
             </div>
 
             <div className="form-group">
-              <input className="btn btn-primary btn-lg" type="submit" value="Submit"/>
+              <input className="btn btn-primary" type="submit" value="Submit"/>
             </div>
 
           </div>
