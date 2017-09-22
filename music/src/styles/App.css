@@ -19,7 +19,18 @@
   color: grey;
   font-size: 15px;
   border-radius: 5px;
+  padding: 2px;
 }
+
+.btn {
+  background-color: orange;
+  color: grey
+}
+
+.border {
+border: 10px solid orange;
+}
+
 
 .btn-primary {
   background-color: white;

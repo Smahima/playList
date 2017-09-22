@@ -57,23 +57,23 @@ this.handleSongTitle = this.handleSongTitle.bind(this);
         <form onSubmit={this.addToList}>
 
           <div className="form-group row">
-            <label  className="col-sm-2 col-form-label">User Name</label>
+            <label  className="col-m-2 col-form-label">User Name</label>
               <div className="col-sm-10">
               <input onChange={this.handleUserName} type="text" className="form-control" value={this.state.userName} placeholder="Enter User Name"/>
             </div>
           </div>
 
           <div className="form-group row">
-            <label  className="col-sm-2 col-form-label">Artist</label>
+            <label  className="col-m-2 col-form-label">Artist</label>
               <div className="col-sm-10">
               <input onChange={this.handleArtist} type="text" className="form-control" value={this.state.Artist} placeholder="Search by Artist"/>
             </div>
           </div>
 
           <div className="form-group row">
-            <label  className="col-sm-2 col-form-label">Song Title</label>
+            <label  className="col-sm-2 col-form-label">Title</label>
               <div className="col-sm-10">
-              <input onChange={this.handleSongTitle} type="text" className="form-control" value={this.state.songTitle} placeholder="Search by Song Title"/>
+              <input onChange={this.handleSongTitle} type="text" className="form-control" value={this.state.songTitle} placeholder="Search by Title"/>
             </div>
           </div>
 
@@ -95,7 +95,6 @@ this.handleSongTitle = this.handleSongTitle.bind(this);
       );
     }
 }
-
 
 
 export default PlayListForm;

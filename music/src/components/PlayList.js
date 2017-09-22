@@ -31,8 +31,8 @@ class PlayList extends Component {
     render() {
    return (
      <div>
-       <button onClick={this.fetchData}>Update List</button>
-       <PlayListItem arr={this.state.songs}/>
+       <button className="btn" onClick={this.fetchData}>Update List</button>
+       <PlayListItem array={this.state.songs}/>
      </div>
    );
  }
