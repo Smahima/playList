@@ -31,7 +31,7 @@ class PlayList extends Component {
     render() {
    return (
      <div>
-       <button className="btn" onClick={this.fetchData}>Update List</button>
+       <button className="btn" onClick={this.fetchData}>Add My Tune!</button>
        <PlayListItem array={this.state.songs}/>
      </div>
    );

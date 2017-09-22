@@ -64,9 +64,9 @@ this.handleSongTitle = this.handleSongTitle.bind(this);
           </div>
 
           <div className="form-group row">
-            <label  className="col-m-2 col-form-label">Artist</label>
+            <label  className="col-sm-2 col-form-label">Artist</label>
               <div className="col-sm-10">
-              <input onChange={this.handleArtist} type="text" className="form-control" value={this.state.Artist} placeholder="Search by Artist"/>
+              <input onChange={this.handleArtist} type="text" className="form-control" value={this.state.songArtist} placeholder="Artist"/>
             </div>
           </div>
 

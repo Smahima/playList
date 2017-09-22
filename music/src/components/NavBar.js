@@ -4,7 +4,7 @@ class NavBar extends Component {
  render (){
    return (
      <div className="header">
-        <p>Play What?!</p>
+        <p>The Hills are Alive with the Sounds</p>
      </div>
    );
  }
