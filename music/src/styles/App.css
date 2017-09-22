@@ -14,6 +14,10 @@
 
 }
 
+.main{
+  margin: 35px 35px 0 0;
+}
+
 .form-group {
   background-color: purple;
   color: grey;
@@ -29,6 +33,7 @@
 
 .border {
 border: 10px solid orange;
+border-radius: 5px;
 }
 
 
@@ -37,6 +42,8 @@ border: 10px solid orange;
   color: grey;
   align: center;
   margin: 5px 0 0 15px;
+  font-family: fantasy;
+
 }
 
 .App-logo {

@@ -84,7 +84,7 @@ this.handleSongTitle = this.handleSongTitle.bind(this);
             </div>
 
             <div className="form-group">
-              <input className="btn btn-primary" type="submit" value="Submit"/>
+              <input className="btn btn-primary" type="submit" value="Bring It!"/>
             </div>
 
           </div>
